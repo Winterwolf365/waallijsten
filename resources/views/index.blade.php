@@ -5,48 +5,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    @vite('resources/css/app.css')
+	<script src="tailwind.js"></script>
+	<script src="app.js"></script>
 
-	<style>
-		@font-face {
-			font-family: MinionPro;
-			src: url('MinionPro-Regular.otf');
-		}
-		
-		* {
-			z-index: 10;
-			font-family: MinionPro, system-ui, sans-serif !important;
-		}
+    <style>
+        @font-face {
+            font-family: MinionPro;
+            src: url('MinionPro-Regular.otf');
+        }
 
-		body>main {
-			background-image: url("images/background-black.webp");
-		}
+        * {
+            z-index: 10;
+            font-family: MinionPro, system-ui, sans-serif !important;
+        }
 
-		#xl {
-			height: calc(100vh - 160px);
-		}
-	</style>
+        body>main {
+            background-image: url("images/background-black.webp");
+        }
 
-	<script>
-		function toggleMenu() {
-			let menu = document.querySelector("#menu");
-			let button = document.querySelector("#button");
-			let nav = document.querySelector("#nav");
-
-			if (menu.classList.contains("hidden")) {
-				menu.classList.remove("hidden");
-				button.innerHTML = "↟ Links ↟";
-				nav.classList.remove("md:mb-28");
-				nav.classList.remove("mb-12");
-			} else {
-				menu.classList.add("hidden");
-				button.innerHTML = "↡ Links ↡";
-				nav.classList.add("md:mb-28");
-				nav.classList.add("mb-12");
-			}
-		}
-	</script>
-
+        #xl {
+            height: calc(100vh - 160px);
+        }
+    </style>
+	
 	<meta property="og:title" content="Welkom op de site van De Waallijsten!" />
 	<meta property="og:description"
 		content="Een mooie plaats om u te oriënteren op de mogelijkheden die wij bieden op het gebied van inlijsten in de ruimste zin van het woord." />
